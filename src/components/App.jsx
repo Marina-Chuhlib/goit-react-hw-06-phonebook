@@ -5,7 +5,8 @@ import {
   getFilteredContacts,
   getFilter,
 } from './redux/selectors';
-import { addContact, deleteContact, setFilter } from './redux/actions';
+import { addContact, deleteContact, } from '../components/redux/contacts/contacts-action';
+import { setFilter } from './redux/filter/filter-actions';
 
 import ContactForm from './ContactForm/ContactForm';
 import ContactsList from './ContactsList/ContactsList';
