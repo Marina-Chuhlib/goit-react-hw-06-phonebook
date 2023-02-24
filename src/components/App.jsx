@@ -1,10 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import {
-  getAllContacts,
-  getFilteredContacts,
-  getFilter,
-} from './redux/selectors';
+import { getAllContacts, getFilteredContacts } from './redux/contacts/contacts-selectors';
+import { getFilter } from './redux/filter/filter-selectors';
 import { addContact, deleteContact, } from '../components/redux/contacts/contacts-action';
 import { setFilter } from './redux/filter/filter-actions';
 
@@ -23,10 +20,6 @@ const App = () => {
   const filteredContacts = useSelector(getFilteredContacts);
 
   const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   localStorage.setItem('my-contacts', JSON.stringify(contacts));
-  // }, [contacts]);
 
   const isDuplicate = name => {
     const normalized = name.toLowerCase();
