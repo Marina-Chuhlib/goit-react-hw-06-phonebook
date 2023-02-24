@@ -1,0 +1,21 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  max-width: 200px;
+}
+
+.input {
+  margin-top: 4px;
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: inherit;
+  border: 1px solid rgb(58, 57, 57);
+}
+.input:hover {
+  border: 1px solid rgb(58, 57, 57);
+  background-color: rgb(242, 238, 234);
+}

@@ -1,0 +1,44 @@
+.wrapper {
+  margin-bottom: 20px;
+  padding: 28px;
+  max-width: 250px;
+  border: 1px solid rgb(58, 57, 57);
+  border-radius: 4px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: 500;
+  max-width: 200px;
+}
+
+.input {
+  margin-top: 4px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid rgb(58, 57, 57);
+  border-radius: 5px;
+  background-color: inherit;
+}
+.input:hover {
+  border: 1px solid rgb(58, 57, 57);
+  background-color: rgb(242, 238, 234);
+}
+
+.button {
+  padding: 5px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgb(180, 180, 180);
+}
+
+.button:hover {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(127, 180, 255);
+}

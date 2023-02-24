@@ -1,0 +1,40 @@
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.list {
+  margin: 30px;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  padding: 5px;
+  width: fit-content;
+  font-size: 18px;
+}
+
+.contact {
+  margin-right: 15px;
+}
+
+.number {
+  font-weight: normal;
+}
+
+.button {
+  max-height: 32px;
+  padding: 5px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 180);
+}
+
+.button:hover {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(242, 124, 124);
+}

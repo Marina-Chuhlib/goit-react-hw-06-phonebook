@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+}
+.wrapper {
+  margin-left: 20px;
+  padding: 15px;
+}
+
+.text {
+  padding: 8px;
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(116, 114, 114);
+  width: fit-content;
+}
