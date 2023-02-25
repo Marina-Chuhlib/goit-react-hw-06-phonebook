@@ -16,16 +16,17 @@ import Filter from './Filter/Filter';
 import css from './App.module.css';
 
 const App = () => {
-  const contacts = useSelector(getAllContacts);
+  // const contacts = useSelector(getAllContacts);
   // console.log(contacts);
 
   const filteredContacts = useSelector(getFilteredContacts);
+  console.log(filteredContacts);
 
   const dispatch = useDispatch();
 
   const isDuplicate = name => {
     const normalized = name.toLowerCase();
-    const result = contacts.find(({ name }) => {
+    const result = filteredContacts.find(({ name }) => {
       return normalized === name.toLowerCase();
     });
     return Boolean(result);
@@ -41,11 +42,7 @@ const App = () => {
     dispatch(action);
   };
 
-  const handleDeleteContact = id => {
-    dispatch(deleteContact(id));
-  };
-
-  const isContacts = Boolean(contacts.length > 0);
+  const isContacts = Boolean(filteredContacts.length);
 
   return (
     <div className={css.wrapper}>
@@ -55,12 +52,7 @@ const App = () => {
       <h2>Contacts</h2>
       <Filter />
 
-      {isContacts && (
-        <ContactsList
-          contacts={filteredContacts}
-          deleteContact={handleDeleteContact}
-        />
-      )}
+      {isContacts && <ContactsList />}
       {!isContacts && <p className={css.text}>No contacts in list</p>}
     </div>
   );
