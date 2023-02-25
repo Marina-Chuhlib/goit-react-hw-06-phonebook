@@ -1,13 +1,6 @@
 import { useSelector } from 'react-redux';
 
-import {
-  // getAllContacts,
-  getFilteredContacts,
-} from './redux/contacts/contacts-selectors';
-// import {
-//   addContact,
-//   deleteContact,
-// } from '../components/redux/contacts/contacts-slice';
+import { getFilteredContacts } from './redux/contacts/contacts-selectors';
 
 import ContactForm from './ContactForm/ContactForm';
 import ContactsList from './ContactsList/ContactsList';

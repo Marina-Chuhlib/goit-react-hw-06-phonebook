@@ -6,7 +6,6 @@ import { deleteContact } from 'components/redux/contacts/contacts-slice';
 import css from '../ContactsList/ContactsList.module.css';
 
 const ContactsList = () => {
-
   const filteredContacts = useSelector(getFilteredContacts);
 
   const dispatch = useDispatch();
@@ -14,7 +13,6 @@ const ContactsList = () => {
   const handleDeleteContact = id => {
     dispatch(deleteContact(id));
   };
-
 
   const elements = filteredContacts.map(({ id, name, number }) => (
     <li key={id} className={css.item}>
